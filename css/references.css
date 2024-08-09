@@ -1,0 +1,29 @@
+.main-content ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .main-content li {
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .main-content li a {
+            color: #004186;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .main-content li a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content li p {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+            color: #666;
+        }

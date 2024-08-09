@@ -1,0 +1,126 @@
+.collapsible {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.collapsible.nonpolar {
+    background-color: #fff8e1; 
+}
+
+.collapsible.nonpolar .collapsible-header {
+    background-color: #fbc02d; 
+    color: #ffffff;
+    font-weight: bold; 
+    padding: 15px;
+}
+
+.collapsible.polar {
+    background-color: #e1f5fe; 
+}
+
+.collapsible.polar .collapsible-header {
+    background-color: #42a5f5; 
+    color: #fff; 
+    font-weight: bold; 
+    padding: 15px;
+}
+
+.collapsible.basic {
+    background-color: #e8f5e9; 
+}
+
+.collapsible.basic .collapsible-header {
+    background-color: #66bb6a; 
+    color: #fff; 
+    font-weight: bold; 
+    padding: 15px;
+}
+
+.collapsible.acidic {
+    background-color: #f3e5f5; 
+}
+
+.collapsible.acidic .collapsible-header {
+    background-color: #ab47bc; 
+    color: #fff; 
+    font-weight: bold; 
+    padding: 15px;
+}
+
+.collapsible-header {
+    cursor: pointer;
+    font-size: 1.2em;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    position: relative;
+}
+
+.collapsible-header::after {
+    content: '\25BC';
+    position: absolute;
+    right: 20px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.collapsible-header.active::after {
+    content: '\25B2'; 
+    transform: rotate(180deg);
+}
+
+.collapsible-content {
+    display: none; 
+    padding: 15px;
+    overflow: hidden;
+}
+
+.amino-acid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.amino-acid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+    text-align: center;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #fff; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 200px; 
+}
+
+.amino-acid-item img {
+    max-width: 100%;
+    max-height: 70%;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.amino-acid-item p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-transform: capitalize;
+}
+
+.amino-acid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}

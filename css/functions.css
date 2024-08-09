@@ -1,0 +1,87 @@
+.section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #007bff;
+        }
+
+        .functions-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .functions-table th, .functions-table td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .functions-table th {
+            background-color: #f1f8ff;
+            color: #007bff;
+        }
+
+        .functions-table img {
+            width: 80px; 
+            height: 80px; 
+            vertical-align: middle;
+            margin-right: 15px; 
+            border-radius: 4px;
+        }
+
+        .functions-table td {
+            vertical-align: top;
+            line-height: 1.5;
+        }
+
+        .interactive-section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f1f8ff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .interactive-section button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .interactive-section button:hover {
+            background-color: #0056b3;
+        }
+
+        .interactive-section p {
+            margin: 10px 0;
+        }
+
+        .interactive-section img {
+            display: block;
+            max-width: 100%;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        .interactive-section a {
+            color: #007bff;
+            text-decoration: underline;
+        }
+
+        .interactive-section a:hover {
+            color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .functions-table img {
+                width: 60px; 
+                height: 60px;
+            }
+        }
